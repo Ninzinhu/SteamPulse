@@ -1,6 +1,7 @@
 import dotenv from "dotenv";
 
 dotenv.config();
+console.log('config loaded, DATABASE_URL=', process.env.DATABASE_URL, 'REDIS_URL=', process.env.REDIS_URL);
 
 export const config = {
   databaseUrl: process.env.DATABASE_URL || "",
